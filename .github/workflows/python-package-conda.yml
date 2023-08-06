@@ -1,34 +1,15 @@
-name: Python Package using Conda
-
-on: [push]
-
-jobs:
-  build-linux:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 5
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.10'
-    - name: Add conda to system path
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-    - name: Lint with flake8
-      run: |
-        conda install flake8
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        conda install pytest
-        pytest
+[
+  {
+    "enable": true,
+    "alias": "盛铭洋",
+    "phone": "18237595436",
+    "password": "18237595436sjh",
+    "deviceType": "Redmi|K40|12",
+    "deviceId": "cc9ae66244614aea9ab4a2dd22890a4713e1",
+    "randomLocation": false,
+    "address": "河南省新乡市红旗区新飞大道1789号高新区火炬园 FII(A-B)(101-104)号",
+    "longitude": "113.899934",
+    "latitude": "35.243513",
+    "pushKey": "9f57b8d3e13b4fdfa9d394a7ba249949"
+  }
+]

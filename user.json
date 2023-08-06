@@ -13,3 +13,18 @@
     "pushKey": "推送Key"
   }
 ]
+[
+  {
+    "enable": true,
+    "alias": "盛铭洋",
+    "phone": "18237595436",
+    "password": "18237595436sjh",
+    "deviceType": "Redmi|K40|12",
+    "deviceId": "cc9ae66244614aea9ab4a2dd22890a4713e1",
+    "randomLocation": false,
+    "address": "河南省新乡市红旗区新飞大道1789号高新区火炬园 FII(A-B)(101-104)号",
+    "longitude": "113.899934",
+    "latitude": "35.243513",
+    "pushKey": "9f57b8d3e13b4fdfa9d394a7ba249949"
+  }
+]
